@@ -212,7 +212,7 @@ section {
 
 /* ============ COUNTDOWN ============ */
 .countdown {
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -525,6 +525,28 @@ section {
     justify-content: center;
     background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
     padding: 40px 20px;
+}
+
+.fecha::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(147, 112, 219, 0.3), transparent);
+}
+
+.fecha::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(147, 112, 219, 0.3), transparent);
 }
 
 .fecha-container {
